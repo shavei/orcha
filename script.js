@@ -31,32 +31,19 @@
     }
   }
 
-  var line = document.getElementById('status-line');
-  var sign = document.getElementById('door-sign');
-  var word = document.getElementById('door-word');
-  var detail = document.getElementById('door-detail');
-
+  var now = document.getElementById('now');
   try {
-    var now = jerusalemNow();
+    var t = jerusalemNow();
     document.querySelectorAll('.hours tr[data-days]').forEach(function (row) {
-      if (row.dataset.days.split(',').map(Number).indexOf(now.day) !== -1) row.classList.add('today');
+      if (row.dataset.days.split(',').map(Number).indexOf(t.day) !== -1) row.classList.add('today');
     });
-
-    var today = HOURS[now.day];
-    if (today && now.minutes >= today[0] && now.minutes < today[1]) {
-      word.textContent = 'פתוח';
-      detail.textContent = 'עד ' + fmt(today[1]);
-      line.textContent = 'פתוח עכשיו, עד ' + fmt(today[1]) + ' · הלל 31';
-      line.className = 'open';
+    var today = HOURS[t.day];
+    if (today && t.minutes >= today[0] && t.minutes < today[1]) {
+      now.textContent = 'פתוח עכשיו, עד ' + fmt(today[1]);
+      now.className = 'now open';
     } else {
-      var next = nextOpening(now.day, now.minutes);
-      word.textContent = 'סגור';
-      detail.textContent = 'נפתח ' + next;
-      sign.classList.add('is-closed');
-      line.textContent = 'סגור כרגע, נפתח ' + next + ' · הלל 31';
-      line.className = 'closed';
+      now.textContent = 'סגור עכשיו. נפתח ' + nextOpening(t.day, t.minutes);
+      now.className = 'now closed';
     }
-  } catch (e) {
-    sign.hidden = true;
-  }
+  } catch (e) { /* keep the static hours line */ }
 })();

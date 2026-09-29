@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>אורחה | חנות טיולים ומחנאות בירושלים, מאז 1978</title>
-  <meta name="description" content="אורחה, חנות הטיולים הוותיקה בירושלים מאז 1978. אוהלים, שקי שינה, תרמילים, ביגוד שטח, ציוד בישול ועוד. רחוב הלל 31, ירושלים. 02-6240655">
-  <meta property="og:title" content="אורחה | חנות טיולים ומחנאות בירושלים, מאז 1978">
-  <meta property="og:description" content="חנות שכונתית ברחוב הלל, עם ייעוץ אישי לכל טיול.">
+  <title>אורחה | חנות טיולים וקמפינג בירושלים, מאז 1978</title>
+  <meta name="description" content="אורחה, חנות ציוד טיולים וקמפינג ברחוב הלל 31 בירושלים, מאז 1978. אוהלים, שקי שינה, תרמילים, ביגוד ונעליים, ציוד בישול ועוד. 02-6240655">
+  <meta property="og:title" content="אורחה | חנות טיולים וקמפינג בירושלים">
+  <meta property="og:description" content="ברחוב הלל 31 מאז 1978.">
   <meta property="og:image" content="assets/logo.png">
   <meta property="og:locale" content="he_IL">
-  <meta name="theme-color" content="#f5eedf">
+  <meta name="theme-color" content="#ffffff">
   <link rel="icon" href="assets/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Assistant:wght@400;600;700&family=Frank+Ruhl+Libre:wght@500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew:wght@400;600;700&family=Karantina:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script type="application/ld+json">
   {
@@ -22,7 +22,7 @@
     "@type": "SportingGoodsStore",
     "name": "אורחה - Orcha",
     "logo": "assets/logo.png",
-    "description": "חנות ציוד מחנאות, קמפינג וטיולים בירושלים",
+    "description": "חנות ציוד טיולים וקמפינג בירושלים",
     "telephone": "+972-2-624-0655",
     "email": "orcha1978@gmail.com",
     "foundingDate": "1978",
@@ -46,154 +46,110 @@
 </head>
 <body>
 
-  <div class="topline">
-    <div class="wrap topline-inner">
-      <span id="status-line">הלל 31, ירושלים</span>
-      <a href="tel:+97226240655">02-6240655</a>
-    </div>
-  </div>
-
-  <header class="masthead wrap">
-    <img class="masthead-logo" src="assets/logo.png" alt="אורחה" width="720" height="376">
-    <p class="masthead-sub">חנות טיולים ומחנאות <span class="dot">·</span> ירושלים <span class="dot">·</span> מאז 1978</p>
-    <nav class="masthead-nav" aria-label="ניווט">
-      <a href="#shelves">מה יש בחנות</a>
-      <a href="#us">מי אנחנו</a>
-      <a href="#visit">איך מגיעים</a>
+  <header class="bar">
+    <nav class="bar-nav" aria-label="ניווט">
+      <a href="#stock">מה יש</a>
+      <a href="#name">השם</a>
+      <a href="#visit">שעות וכתובת</a>
     </nav>
+    <a class="bar-phone" href="tel:+97226240655">02-6240655</a>
   </header>
 
   <main>
 
-    <section class="opening wrap">
-      <h1>נכנסים לשאול שאלה קטנה,<br>יוצאים עם תוכנית לטיול.</h1>
-      <div class="opening-text">
-        <p>אורחה היא חנות אחת, ברחוב הלל במרכז ירושלים. לא רשת. מי שעומד מאחורי הדלפק ישאל קודם לאן אתם יוצאים, מתי ועם מי, ורק אחר כך ימליץ על משהו.</p>
-        <p>ככה אנחנו עובדים מאז 1978.</p>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>
+          <span>ציוד לטיולים</span>
+          <span>ולקמפינג.</span>
+          <span class="red">הלל 31, מאז 1978.</span>
+        </h1>
+        <p class="lede">חנות אחת ברחוב הלל במרכז ירושלים. אוהלים, שקי שינה, תרמילים, ביגוד ונעליים, ציוד לבישול בשטח והרבה דברים קטנים. באים, מספרים לאן יוצאים, ומקבלים ייעוץ מאנשים שמכירים את הציוד.</p>
+        <p class="now" id="now">ראשון עד חמישי 9:30 עד 20:00, שישי עד 14:00</p>
       </div>
-      <p class="handnote" aria-hidden="true">תקפצו להגיד שלום!</p>
+      <img class="hero-logo" src="assets/logo.png" alt="הלוגו של אורחה: גמל עם אוכף מעל המילה אורחה" width="720" height="376">
     </section>
 
-    <!--
-      גלריית תמונות מהחנות. כשיש תמונות: לשים אותן ב-assets/photos/ ולהחזיר את הסקשן הזה.
-    <section class="photos wrap" aria-label="תמונות מהחנות">
-      <figure class="photo"><img src="assets/photos/inside-1.jpg" alt="" loading="lazy"><figcaption></figcaption></figure>
-    </section>
-    -->
-
-    <section class="shelves" id="shelves">
-      <div class="wrap">
-        <h2>מה יש על המדפים</h2>
-        <p class="section-intro">רשימה חלקית. בחנות יש הרבה יותר ממה שנכנס פה.</p>
-
-        <div class="board">
-          <dl class="board-list">
-            <div><dt>אוהלים</dt><dd>לזוג, למשפחה, לטרק ארוך</dd></div>
-            <div><dt>שקי שינה</dt><dd>פוך וסינטטי, לקיץ ולחורף. גם Western Mountaineering</dd></div>
-            <div><dt>מזרנים</dt><dd>לשטח, לחורשה, לתרמיל</dd></div>
-            <div><dt>תרמילים</dt><dd>ליום אחד, לשבוע, לטיול הגדול אחרי הצבא</dd></div>
-            <div><dt>תיקים ומזוודות</dt><dd>לטיסה, לרכב, לגב</dd></div>
-            <div><dt>ביגוד שטח</dt><dd>שכבות, מעילים, מה שצריך לגשם ולקור</dd></div>
-          </dl>
-          <dl class="board-list">
-            <div><dt>נעליים</dt><dd>נעלי הליכה ונעלי טיולים</dd></div>
-            <div><dt>סקי וסנובורד</dt><dd>ביגוד וציוד לחורף</dd></div>
-            <div><dt>בישול בשטח</dt><dd>גזיות, סירים, כלי אוכל</dd></div>
-            <div><dt>ערסלים</dt><dd>למרפסת, לחורשה, לחוף</dd></div>
-            <div><dt>ריהוט מתקפל</dt><dd>כיסאות ושולחנות לקמפינג</dd></div>
-            <div><dt>הדברים הקטנים</dt><dd>מצפנים, פנסים, אביזרים לכל מיני דברים</dd></div>
-          </dl>
-        </div>
-
-        <p class="board-foot">מחפשים משהו מסוים? <a href="tel:+97226240655">תתקשרו לפני שאתם באים</a> ונבדוק אם זה במלאי.</p>
+    <section class="stock" id="stock" aria-labelledby="stock-title">
+      <h2 id="stock-title" class="visually-hidden">מה יש בחנות</h2>
+      <ul class="wall">
+        <li><b>אוהלים</b> <i>לזוג, למשפחה, לטרק</i></li>
+        <li><b>שקי שינה</b> <i>פוך וסינטטי</i></li>
+        <li><b>מזרנים</b></li>
+        <li><b>תרמילים</b> <i>מיום אחד ועד הטיול הגדול</i></li>
+        <li><b>מזוודות</b></li>
+        <li><b>ביגוד שטח</b></li>
+        <li><b>נעלי הליכה</b></li>
+        <li><b>סקי וסנובורד</b></li>
+        <li><b>גזיות וסירים</b></li>
+        <li><b>ערסלים</b></li>
+        <li><b>כיסאות מתקפלים</b></li>
+        <li><b>מצפנים</b></li>
+        <li><b>פנסי ראש</b></li>
+      </ul>
+      <div class="stock-notes">
+        <p>בין המותגים: Western Mountaineering, שקי שינה מפוך שלא קל למצוא בארץ.</p>
+        <p>מחפשים משהו מסוים? כדאי להתקשר לפני, <a href="tel:+97226240655">02-6240655</a>, ולבדוק שהוא במלאי.</p>
       </div>
     </section>
 
-    <section class="us wrap" id="us">
-      <div class="us-text">
-        <h2>למה קוראים לנו אורחה</h2>
-        <p>אורחה היא שיירה: גמלים, מטען, ואנשים שהולכים יחד דרך ארוכה. בגלל זה יש גמל בלוגו.</p>
-        <p>מהטיול השנתי של בית הספר, דרך סופ״ש בגליל ועד שביל ישראל או טרק בחו״ל, כבר כמעט חמישים שנה ירושלמים עוברים אצלנו לפני שהם יוצאים לדרך.</p>
-        <p>מה שחשוב לנו: שתצאו מהחנות עם הציוד שמתאים לטיול שלכם, ולא עם יותר ממה שצריך.</p>
-        <p class="signoff">צוות אורחה</p>
-      </div>
-      <aside class="us-side" aria-hidden="true">
-        <div class="stamp">
-          <span class="stamp-top">הלל 31</span>
-          <span class="stamp-year">1978</span>
-          <span class="stamp-bottom">ירושלים</span>
-        </div>
-      </aside>
-    </section>
-
-    <section class="notes" id="reviews">
-      <div class="wrap">
-        <h2>מה כתבו עלינו</h2>
-        <div class="notes-row">
-          <figure class="note note-a">
-            <blockquote>חנות נעימה, מסודרת, יש בה כל מה שצריך לטיולים. ושירות מעולה.</blockquote>
-            <figcaption>עפרה א.</figcaption>
-          </figure>
-          <figure class="note note-b">
-            <blockquote>אך ורק לקנות באורחה. שירות מקצועי, ידע רב, התאמת מוצרים מדויקת. חיוך ותחושה שנשאר רק לטוס ולהנות.</blockquote>
-            <figcaption>נירית ח.</figcaption>
-          </figure>
-        </div>
-        <p class="notes-foot">מתוך יותר מ-500 ביקורות ב-<a href="https://easy.co.il/en/page/1712030" target="_blank" rel="noopener">easy</a>. תודה לכל מי שכתב.</p>
+    <section class="name" id="name">
+      <img class="name-camel" src="assets/camel.png" alt="" width="344" height="460" loading="lazy">
+      <div class="name-text">
+        <h2>אורחה היא שיירה.</h2>
+        <p>שיירה של גמלים ואנשים שחוצים יחד את המדבר. לכן יש גמל בלוגו.</p>
+        <p>החנות פתוחה ברחוב הלל מאז 1978. דרכה עברו ירושלמים לפני הטיול השנתי, לפני שביל ישראל ולפני הטיול הגדול לחו״ל.</p>
       </div>
     </section>
 
-    <section class="visit wrap" id="visit">
-      <div class="visit-text">
-        <h2>איך מגיעים</h2>
-        <p class="address">רחוב הלל 31, ירושלים</p>
-        <p>במרכז העיר, קרוב למדרחוב בן יהודה ולרכבת הקלה ברחוב יפו. יש חניונים בתשלום בסביבה, והכניסה נגישה.</p>
+    <section class="said" aria-labelledby="said-title">
+      <h2 id="said-title">מה כתבו לקוחות</h2>
+      <figure class="q q-1">
+        <blockquote>״חנות נעימה, מסודרת, יש בה כל מה שצריך לטיולים. ושירות מעולה.״</blockquote>
+        <figcaption>עפרה א., easy, 2025</figcaption>
+      </figure>
+      <figure class="q q-2">
+        <blockquote>״אך ורק לקנות באורחה. שירות מקצועי, ידע רב, התאמת מוצרים מדויקת.״</blockquote>
+        <figcaption>נירית ח., easy, 2024</figcaption>
+      </figure>
+      <p class="said-more">ועוד מעל 500 ביקורות, ציון 9.1. אחד הלקוחות כתב שהמחיר אצלנו היה לפעמים נמוך מהמחיר הכי זול בזאפ. <a href="https://easy.co.il/en/page/1712030" target="_blank" rel="noopener">לכל הביקורות</a></p>
+    </section>
 
-        <div class="door">
-          <div class="door-sign" id="door-sign" aria-live="polite">
-            <span class="door-word" id="door-word">פתוח</span>
-            <span class="door-detail" id="door-detail"></span>
-          </div>
-          <table class="hours">
-            <caption class="visually-hidden">שעות פתיחה</caption>
-            <tbody>
-              <tr data-days="0,1,2,3,4"><th scope="row">ראשון עד חמישי</th><td>9:30 עד 20:00</td></tr>
-              <tr data-days="5"><th scope="row">שישי</th><td>9:30 עד 14:00</td></tr>
-              <tr data-days="6"><th scope="row">שבת</th><td>סגור</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="small">בחגים ובחול המועד השעות משתנות, כדאי להתקשר לפני.</p>
-
-        <ul class="ways">
-          <li><a href="tel:+97226240655">02-6240655</a></li>
-          <li><a href="mailto:orcha1978@gmail.com">orcha1978@gmail.com</a></li>
-          <li><a href="https://waze.com/ul?q=%D7%94%D7%9C%D7%9C%2031%20%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D&navigate=yes" target="_blank" rel="noopener">Waze</a></li>
-          <li><a href="https://www.google.com/maps/search/?api=1&query=%D7%90%D7%95%D7%A8%D7%97%D7%94+%D7%94%D7%9C%D7%9C+31+%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D" target="_blank" rel="noopener">Google Maps</a></li>
-        </ul>
-        <p class="small">מדברים גם אנגלית וספרדית, ומכבדים כרטיס מתנה של ישראכרט.</p>
+    <section class="visit" id="visit">
+      <div class="visit-where">
+        <h2>הלל 31<br>ירושלים</h2>
+        <p>במרכז העיר, ליד מדרחוב בן יהודה והרכבת הקלה ברחוב יפו. חניונים בתשלום בסביבה. הכניסה נגישה.</p>
+        <p class="links">
+          <a href="https://waze.com/ul?q=%D7%94%D7%9C%D7%9C%2031%20%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D&navigate=yes" target="_blank" rel="noopener">Waze</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=%D7%90%D7%95%D7%A8%D7%97%D7%94+%D7%94%D7%9C%D7%9C+31+%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D" target="_blank" rel="noopener">Google Maps</a>
+        </p>
       </div>
-      <div class="map">
-        <iframe
-          title="מפה: אורחה, הלל 31 ירושלים"
-          src="https://maps.google.com/maps?q=%D7%94%D7%9C%D7%9C%2031%2C%20%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D&z=16&output=embed&hl=he"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="visit-when">
+        <table class="hours">
+          <caption>שעות פתיחה</caption>
+          <tbody>
+            <tr data-days="0,1,2,3,4"><th scope="row">א׳ עד ה׳</th><td>9:30 עד 20:00</td></tr>
+            <tr data-days="5"><th scope="row">שישי</th><td>9:30 עד 14:00</td></tr>
+            <tr data-days="6"><th scope="row">שבת</th><td>סגור</td></tr>
+          </tbody>
+        </table>
+        <p class="fine">בחגים ובחול המועד השעות משתנות.</p>
+      </div>
+      <div class="visit-talk">
+        <p class="big-phone"><a href="tel:+97226240655">02-6240655</a></p>
+        <p><a href="mailto:orcha1978@gmail.com">orcha1978@gmail.com</a></p>
+        <p class="fine">מדברים גם אנגלית וספרדית. מכבדים כרטיס מתנה של ישראכרט.</p>
       </div>
     </section>
 
   </main>
 
   <footer class="foot">
-    <div class="wrap foot-inner">
-      <p>אורחה, הלל 31, ירושלים. <a href="tel:+97226240655">02-6240655</a></p>
-      <p>
-        <a href="https://www.instagram.com/orcha_camping/" target="_blank" rel="noopener">אינסטגרם</a>
-        <span class="dot">·</span>
-        <a href="https://www.facebook.com/Orcha2012/" target="_blank" rel="noopener">פייסבוק</a>
-      </p>
-      <p class="foot-small">© <span id="year"></span> אורחה מחנאות וטיולים</p>
-    </div>
+    <span>אורחה מחנאות וטיולים, <span id="year"></span></span>
+    <span>
+      <a href="https://www.instagram.com/orcha_camping/" target="_blank" rel="noopener">אינסטגרם</a>
+      <a href="https://www.facebook.com/Orcha2012/" target="_blank" rel="noopener">פייסבוק</a>
+    </span>
   </footer>
 
   <script src="script.js"></script>

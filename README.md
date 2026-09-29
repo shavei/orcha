@@ -7,8 +7,8 @@ Plain HTML/CSS/JS with no build step. Open `index.html` in a browser, or serve t
 ```
 index.html        page content (Hebrew, RTL)
 styles.css        styles
-script.js         live open/closed status and door sign (Jerusalem time)
-assets/           logo (transparent PNG), favicon, apple touch icon
+script.js         live open/closed status (Jerusalem time)
+assets/           logo and camel (transparent PNGs), favicon, apple touch icon
 ```
 
 ## Store details used on the site
@@ -27,7 +27,7 @@ Sources: easy.co.il store page, d.co.il, business directories. Hours are also ha
 
 ## Adding photos
 
-There is a commented-out photo section in `index.html` right after the opening text. Put images in `assets/photos/` and uncomment it.
+Put images in `assets/photos/`. The hero and the red "name" section are the natural places for a storefront and an interior shot.
 
 ## Still needed from the store
 
