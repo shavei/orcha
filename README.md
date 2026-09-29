@@ -8,7 +8,7 @@ Plain HTML/CSS/JS with no build step. Open `index.html` in a browser, or serve t
 index.html        page content (Hebrew, RTL)
 styles.css        styles
 script.js         mobile menu, live "open now" status (Jerusalem time), scroll reveal
-assets/           favicon
+assets/           logo (transparent PNG), favicon, apple touch icon
 ```
 
 ## Store details used on the site
@@ -28,6 +28,5 @@ Sources: easy.co.il store page, d.co.il, business directories. Hours are also ha
 ## Still needed from the store
 
 - Real photos (storefront, interior, products) to replace the illustrations
-- Logo file, if the store has one
 - Brands carried (only Western Mountaineering is confirmed from reviews)
 - WhatsApp number, if there is one
