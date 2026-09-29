@@ -9,12 +9,12 @@
   <meta property="og:description" content="ברחוב הלל 31 מאז 1978.">
   <meta property="og:image" content="assets/logo.png">
   <meta property="og:locale" content="he_IL">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#d8c09b">
   <link rel="icon" href="assets/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew:wght@400;600;700&family=Karantina:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&family=Suez+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script type="application/ld+json">
   {
@@ -48,7 +48,7 @@
 
   <header class="bar">
     <nav class="bar-nav" aria-label="ניווט">
-      <a href="#stock">מה יש</a>
+      <a href="#shelves">מה יש</a>
       <a href="#name">השם</a>
       <a href="#visit">שעות וכתובת</a>
     </nav>
@@ -59,66 +59,69 @@
 
     <section class="hero">
       <div class="hero-text">
-        <h1>
-          <span>ציוד לטיולים</span>
-          <span>ולקמפינג.</span>
-          <span class="red">הלל 31, מאז 1978.</span>
-        </h1>
-        <p class="lede">חנות אחת ברחוב הלל במרכז ירושלים. אוהלים, שקי שינה, תרמילים, ביגוד ונעליים, ציוד לבישול בשטח והרבה דברים קטנים. באים, מספרים לאן יוצאים, ומקבלים ייעוץ מאנשים שמכירים את הציוד.</p>
+        <h1>חנות קטנה<br>לטיולים גדולים.</h1>
+        <p class="lede">כבר מ-1978 אנחנו ברחוב הלל 31, במרכז ירושלים. אוהלים, שקי שינה, תרמילים, ביגוד ונעליים, וכל הדברים הקטנים שצריך בשטח.</p>
+        <p class="lede">תיכנסו, תמדדו תרמיל, תספרו לנו לאן אתם יוצאים. נעזור לכם לבחור מה לקחת.</p>
         <p class="now" id="now">ראשון עד חמישי 9:30 עד 20:00, שישי עד 14:00</p>
       </div>
-      <img class="hero-logo" src="assets/logo.png" alt="הלוגו של אורחה: גמל עם אוכף מעל המילה אורחה" width="720" height="376">
-    </section>
-
-    <section class="stock" id="stock" aria-labelledby="stock-title">
-      <h2 id="stock-title" class="visually-hidden">מה יש בחנות</h2>
-      <ul class="wall">
-        <li><b>אוהלים</b> <i>לזוג, למשפחה, לטרק</i></li>
-        <li><b>שקי שינה</b> <i>פוך וסינטטי</i></li>
-        <li><b>מזרנים</b></li>
-        <li><b>תרמילים</b> <i>מיום אחד ועד הטיול הגדול</i></li>
-        <li><b>מזוודות</b></li>
-        <li><b>ביגוד שטח</b></li>
-        <li><b>נעלי הליכה</b></li>
-        <li><b>סקי וסנובורד</b></li>
-        <li><b>גזיות וסירים</b></li>
-        <li><b>ערסלים</b></li>
-        <li><b>כיסאות מתקפלים</b></li>
-        <li><b>מצפנים</b></li>
-        <li><b>פנסי ראש</b></li>
-      </ul>
-      <div class="stock-notes">
-        <p>בין המותגים: Western Mountaineering, שקי שינה מפוך שלא קל למצוא בארץ.</p>
-        <p>מחפשים משהו מסוים? כדאי להתקשר לפני, <a href="tel:+97226240655">02-6240655</a>, ולבדוק שהוא במלאי.</p>
+      <div class="hero-logo">
+        <img src="assets/logo.png" alt="הלוגו של אורחה: גמל עם אוכף מעל המילה אורחה" width="720" height="376">
       </div>
     </section>
+
+    <div class="weave" role="presentation"></div>
+
+    <section class="shelves" id="shelves">
+      <div class="shelves-head">
+        <h2>מה יש על המדפים</h2>
+        <p>זו רק חלק מהרשימה. בחנות יש הרבה יותר.</p>
+      </div>
+      <dl class="shelf-list">
+        <div><dt>אוהלים</dt><dd>לזוג, למשפחה, לטרק ארוך</dd></div>
+        <div><dt>שקי שינה</dt><dd>פוך וסינטטי, לקיץ ולחורף. גם Western Mountaineering, שלא קל למצוא בארץ</dd></div>
+        <div><dt>מזרנים</dt><dd>לשטח, לחורשה ולתרמיל</dd></div>
+        <div><dt>תרמילים ותיקים</dt><dd>ליום אחד, לשבוע, לטיול הגדול. גם מזוודות</dd></div>
+        <div><dt>ביגוד ונעליים</dt><dd>שכבות לקור ולגשם, נעלי הליכה, ביגוד סקי וסנובורד</dd></div>
+        <div><dt>בישול בשטח</dt><dd>גזיות, סירים וכלי אוכל</dd></div>
+        <div><dt>ערסלים וריהוט</dt><dd>ערסלים, כיסאות ושולחנות מתקפלים</dd></div>
+        <div><dt>הדברים הקטנים</dt><dd>מצפנים, פנסים וכל מה שנכנס לכיס של התרמיל</dd></div>
+      </dl>
+      <p class="shelves-foot">מחפשים משהו מסוים? אפשר להתקשר ולבדוק שהוא במלאי: <a href="tel:+97226240655">02-6240655</a></p>
+    </section>
+
+    <div class="weave" role="presentation"></div>
 
     <section class="name" id="name">
       <img class="name-camel" src="assets/camel.png" alt="" width="344" height="460" loading="lazy">
       <div class="name-text">
-        <h2>אורחה היא שיירה.</h2>
-        <p>שיירה של גמלים ואנשים שחוצים יחד את המדבר. לכן יש גמל בלוגו.</p>
-        <p>החנות פתוחה ברחוב הלל מאז 1978. דרכה עברו ירושלמים לפני הטיול השנתי, לפני שביל ישראל ולפני הטיול הגדול לחו״ל.</p>
+        <h2>למה אורחה?</h2>
+        <p>אורחה היא שיירה: גמלים, מטען, ואנשים שהולכים יחד דרך ארוכה במדבר. בגלל זה יש לנו גמל בלוגו, עם אוכף ארוג וגדילים.</p>
+        <p>כבר כמעט חמישים שנה ירושלמים עוברים אצלנו לפני שהם יוצאים לדרך. לטיול השנתי, לשביל ישראל, לסופ״ש בצפון או לטיול הגדול אחרי הצבא.</p>
       </div>
     </section>
 
     <section class="said" aria-labelledby="said-title">
-      <h2 id="said-title">מה כתבו לקוחות</h2>
-      <figure class="q q-1">
-        <blockquote>״חנות נעימה, מסודרת, יש בה כל מה שצריך לטיולים. ושירות מעולה.״</blockquote>
-        <figcaption>עפרה א., easy, 2025</figcaption>
-      </figure>
-      <figure class="q q-2">
-        <blockquote>״אך ורק לקנות באורחה. שירות מקצועי, ידע רב, התאמת מוצרים מדויקת.״</blockquote>
-        <figcaption>נירית ח., easy, 2024</figcaption>
-      </figure>
-      <p class="said-more">ועוד מעל 500 ביקורות, ציון 9.1. אחד הלקוחות כתב שהמחיר אצלנו היה לפעמים נמוך מהמחיר הכי זול בזאפ. <a href="https://easy.co.il/en/page/1712030" target="_blank" rel="noopener">לכל הביקורות</a></p>
+      <h2 id="said-title">מה כתבו עלינו</h2>
+      <div class="said-row">
+        <figure class="q">
+          <blockquote>״חנות נעימה, מסודרת, יש בה כל מה שצריך לטיולים. ושירות מעולה.״</blockquote>
+          <figcaption>עפרה א.</figcaption>
+        </figure>
+        <figure class="q">
+          <blockquote>״אך ורק לקנות באורחה. שירות מקצועי, ידע רב, התאמת מוצרים מדויקת. חיוך ותחושה שנשאר רק לטוס ולהנות.״</blockquote>
+          <figcaption>נירית ח.</figcaption>
+        </figure>
+      </div>
+      <p class="said-more">מתוך יותר מ-500 ביקורות ב-<a href="https://easy.co.il/en/page/1712030" target="_blank" rel="noopener">easy</a>. תודה לכל מי שכתב.</p>
     </section>
+
+    <div class="weave" role="presentation"></div>
 
     <section class="visit" id="visit">
       <div class="visit-where">
-        <h2>הלל 31<br>ירושלים</h2>
-        <p>במרכז העיר, ליד מדרחוב בן יהודה והרכבת הקלה ברחוב יפו. חניונים בתשלום בסביבה. הכניסה נגישה.</p>
+        <h2>בואו לבקר</h2>
+        <p class="address">הלל 31, ירושלים</p>
+        <p>במרכז העיר, ליד מדרחוב בן יהודה והרכבת הקלה ברחוב יפו. יש חניונים בתשלום בסביבה, והכניסה נגישה.</p>
         <p class="links">
           <a href="https://waze.com/ul?q=%D7%94%D7%9C%D7%9C%2031%20%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D&navigate=yes" target="_blank" rel="noopener">Waze</a>
           <a href="https://www.google.com/maps/search/?api=1&query=%D7%90%D7%95%D7%A8%D7%97%D7%94+%D7%94%D7%9C%D7%9C+31+%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D" target="_blank" rel="noopener">Google Maps</a>
@@ -128,12 +131,12 @@
         <table class="hours">
           <caption>שעות פתיחה</caption>
           <tbody>
-            <tr data-days="0,1,2,3,4"><th scope="row">א׳ עד ה׳</th><td>9:30 עד 20:00</td></tr>
+            <tr data-days="0,1,2,3,4"><th scope="row">ראשון עד חמישי</th><td>9:30 עד 20:00</td></tr>
             <tr data-days="5"><th scope="row">שישי</th><td>9:30 עד 14:00</td></tr>
             <tr data-days="6"><th scope="row">שבת</th><td>סגור</td></tr>
           </tbody>
         </table>
-        <p class="fine">בחגים ובחול המועד השעות משתנות.</p>
+        <p class="fine">בחגים ובחול המועד השעות משתנות, כדאי להתקשר לפני.</p>
       </div>
       <div class="visit-talk">
         <p class="big-phone"><a href="tel:+97226240655">02-6240655</a></p>
