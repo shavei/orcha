@@ -7,8 +7,8 @@ Plain HTML/CSS/JS with no build step. Open `index.html` in a browser, or serve t
 ```
 index.html        page content (Hebrew, RTL)
 styles.css        styles
-script.js         mobile menu, live "open now" status (Jerusalem time), scroll reveal
-assets/           logo (transparent PNG), favicon, apple touch icon
+script.js         live open/closed status (Jerusalem time)
+assets/           logo and camel (transparent PNGs), favicon, apple touch icon
 ```
 
 ## Store details used on the site
@@ -25,8 +25,13 @@ assets/           logo (transparent PNG), favicon, apple touch icon
 
 Sources: easy.co.il store page, d.co.il, business directories. Hours are also hard-coded in `script.js` (`HOURS`) for the open/closed badge, so update both places if they change.
 
+## Adding photos
+
+Put images in `assets/photos/`. The hero and the red "name" section are the natural places for a storefront and an interior shot.
+
 ## Still needed from the store
 
-- Real photos (storefront, interior, products) to replace the illustrations
+- Photos of the storefront, the inside of the store and the shelves
+- A quick read of the copy by the owners: the voice is a draft written from public info, so anything that doesn't sound like them should change
 - Brands carried (only Western Mountaineering is confirmed from reviews)
 - WhatsApp number, if there is one
